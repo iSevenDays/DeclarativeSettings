@@ -69,9 +69,9 @@ Creating the same table view using Declarative Settings looks like this:
     [super viewDidLoad];
     
     self.title = @"Basics";
-    [self addSectionWithSectionTitle:@"Audio Codec" identifier:@"Audio" items:^NSArray * {
+    [self addSectionWithSectionTitle:@"Demo" items:^NSArray * {
 
-        TitleItemModel *demo = [[TitleItemModel alloc] initWithTitle:@"Demo" selection:^(SelectionModel *selection) {
+        TitleItemModel *demo = [[TitleItemModel alloc] initWithTitle:@"Hello world" selection:^(SelectionModel *selection) {
             NSLog(@"Selection happened!");
         }];
         
